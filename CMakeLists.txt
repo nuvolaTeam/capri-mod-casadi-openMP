@@ -387,7 +387,7 @@ option(SWIG_IMPORT "Import SWIG" OFF)
 option(RELOCATABLE "Avoid any usage of absolute paths" ON)
 
 # enabling OpenMP support if requested
-option(WITH_OPENMP "Compile with parallelization support using OpenMP" OFF)
+option(WITH_OPENMP "Compile with parallelization support using OpenMP" ON)
 if(WITH_OPENMP)
   find_package(OpenMP REQUIRED)
   if(OPENMP_FOUND)
